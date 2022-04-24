@@ -7,20 +7,159 @@
     <title>Sign Up</title>
 
     <style>
+      @font-face {
+        font-family: lato-reguler;
+        src: url(./assets/font/Lato-Regular.ttf);
+      }
+      .d-flex {
+        display: flex;
+      }
+      .justify-center {
+          justify-content:center;
+      }
+      .justify-between {
+          justify-content: space-between;
+      }
+      .justify-evenly {
+          justify-content: space-evenly;
+      }
+      .aligncontent-center {
+          align-content:center ;
+      }
+      .alignitems-center {
+          align-items: center;
+      }
+      .alignitems-end {
+          align-items: flex-end;
+      }
+      .flex-row {
+          flex-direction: row;
+      }
+      .flex-column {
+          flex-direction: column;
+      }
+      .flex-wrap {
+          flex-wrap: wrap;
+      }
+
+      /* position */
+      .porelative {
+          position: relative;
+      }
+      .poabsolute {
+          position: absolute;
+      }
+      .posticky {
+          position: sticky;
+          top: 0;
+      }
+      .pofixed {
+          position: fixed;
+          top: 0;
+      }
+      .text-left {
+          text-align: left;
+      }
+      .text-center {
+          text-align: center;
+      }
+      .text-end {
+          text-align: end;
+      }
+
+      body {
+        font-family: lato-reguler;
+        color : white
+
+      }
       .container {
-        width: 100%;
+        width: 350px;
         height: 100vh;
         background-image: url(./assets/img/Rectangle\ 2206.png);
         background-repeat: no-repeat;
         background-position: center;
       }
+      .input-grup {
+        width: 320px;
+        margin-bottom: 15px;
+      }
+      .input-grup input {
+        padding: 0 15px;
+        background-color: #EFF0F2;
+        height: 35px; 
+        border-radius: 5px; 
+        border: none;
+        outline: none;
+          
+      }
+      .content span {
+        font-size: 25px;
+        color: white ;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      .btn-box {
+      border: 1px solid #FC2469;
+      border-radius: 10px;
+      background-color: #FC2469;
+      padding: 15px 135px;
+      }
+      .btn-box-g-and-f {
+      border: 1px solid #D2D2D2;
+      border-radius: 10px;
+      background-color: transparent;
+      padding: 8px 40px;
+      }
     </style>
 
 </head>
   <body>
-    <div class="container">
+    <div class="d-flex justify-center">
+      <div class="container">
+        <form class="content d-flex flex-column alignitems-center">
+          <span style="margin-top: 20px;">Sign Up</span>
+          <div class="d-flex flex-column input-grup">
+            <label for="UserName">User Name</label>
+            <input type="text"  placeholder="User Name" name="User Name" id="UserName">
+          </div>
+          <div class="d-flex flex-column input-grup">
+            <label for="Email">Email</label>
+            <input type="email" placeholder="Your Email"     name="Email"    id="Email">
+          </div>
+          <div class="d-flex flex-column input-grup">
+            <label for="Password">Password</label>
+            <input type="password" placeholder="Your Password" name="Password" id="Password">
+          </div>
+          <div class="d-flex flex-column input-grup">
+            <label for="ConfirmPassword">Confirm Password</label>
+            <input type="password" placeholder="Your Password" name="ConfirmPassword" id="ConfirmPassword">
+          </div>
+          <div style="margin-top: 10px;">
+            <button style="color: white" class="btn-box">
+              Sign Up
+            </button>
+          </div>
+        </form>
+        <div class="d-flex justify-center">
+          <p>Or signup with</p>
+        </div>
+        <div style="margin-top: 15px;" class="d-flex flex-column text-center">
+          <div class="d-flex alignitems-center btn-box-g-and-f">
+              <img style="margin-right: 10px ;" src="../Assets/icon/Google.png" alt="">
+              Sign Up with Google
+          </div>
+          <div class="d-flex alignitems-center btn-box-g-and-f box-f">
+              <img style="margin-right: 10px ;" src="../Assets/icon/rsz_facebook_f_logo_2019svg.png" alt="">
+              Sign Up with Facebook
+          </div>
+      </div>
+      
+      </div>
+      
+
 
     </div>
+    
 
   </body>
 </html>
