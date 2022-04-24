@@ -14,20 +14,83 @@
         background-image: url(./assets/img/Rectangle\ 2206.png);
         background-repeat: no-repeat;
         background-size: cover;
-        
+        font-family: Lato;
       }
+
       .text-login{
         width: 100%;
         text-align: center;
         margin-top: 30%;
         left: 50%; 
         color: white;
-        font-family: Lato;
         font-size: 30px;
+      }
+
+      input[type=email],input[type=password]{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        background-color: rgb(153, 151, 151);
+      }
+      .Remember-Forgot{
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+      }
+      input[type=login] {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 50px;
+        margin-right: 100px;
+        border-radius: 5px;
+        background-color: rgb(240, 101, 124);
+        font-size: 18px;
+        text-decoration: none;
+        border: none;
+        color: white;
+      }
+  
+      input[type=login]:hover {
+        background-color: #2980b9;
       }
     </style>
   </head>
   <body>
     <div class="text-login">Login</div>
+    <form action="#" style="margin-top: 40px; margin: 0 10%;">
+      <label for="email" style="color: white;">Email</label><br>
+      <input type="email" placeholder="Email Address" id="email" name="email">
+
+      <label for="password" style="color: white;">Password</label><br>
+      <input type="password" placeholder="Password" id="password" name="password">
+      <br>
+      <div class="Remember-Forgot">
+        <div>
+          <input type="checkbox">
+          <label class="container" style="color: white;">Remember me</label>
+        </div>
+        <span style="color: white;">Forgot password?</span>
+      </div>
+
+      <input type="login" value="Login" >
+      
+  </form>
+  
+    <!-- <p style="text-align: center;">or login with</p>
+    <div class="medsos flex space-between center">
+        <a href="#"><img src="https://img.icons8.com/color/48/000000/google-logo.png" /></a>
+        <a href="#"><img src="https://img.icons8.com/color/48/000000/facebook-new.png" /></a>
+        <a href="#"><img src="https://img.icons8.com/color/48/000000/twitter--v1.png" /></a>
+    </div><br>
+    <span>Don't have an account?</span> 
+    <a href="#">Signup</a> -->
   </body>
 </html>
